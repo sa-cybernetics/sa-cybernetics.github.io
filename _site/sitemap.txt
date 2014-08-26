@@ -11,9 +11,4 @@ http://username.github.io/sitemap.txt
 http://username.github.io/tags.html
 http://username.github.io/pages/wolfram.html
 
-http://username.github.io/2013/09/06/master-project-procrastination-part-1-set-desktop-background-to-newest-xkcd-comic-strip
-http://username.github.io/c++/opencv/computer%20vision/2013/08/12/hand-tracking-and-recognition-with-opencv
-http://username.github.io/2013/04/30/logging-accelerometer-from-android-to-pc
-http://username.github.io/linux/2013/04/12/my-vim-setup
-http://username.github.io/2013/01/26/auto-login-wifi-university
-http://username.github.io/linux/java/jogl/2012/01/24/jogl-animation-and-dynamics-of-furuta-pendulum
+http://username.github.io/linux/2013/09/06/master-project-procrastination-part-1-set-desktop-background-to-newest-xkcd-comic-strip
