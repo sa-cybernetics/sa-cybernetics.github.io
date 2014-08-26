@@ -4,7 +4,7 @@
  <title>SA Cybernetics</title>
  <link href="http://username.github.io/" rel="self"/>
  <link href="http://username.github.io"/>
- <updated>2014-08-26T21:19:31+02:00</updated>
+ <updated>2014-08-26T21:54:38+02:00</updated>
  <id>http://username.github.io</id>
  <author>
    <name>Simen Andresen</name>
@@ -20,6 +20,14 @@
    <content type="html">&lt;p&gt;This semester I’m writing my master’s project, which seems to be a time when procrastination thrives. When setting up Ubuntu on my school PC i had to decide what to use for desktop image. I therefore wrote a script to update the desktop background to the most recent &lt;a href=&quot;http://www.xkcd.com&quot;&gt;XKCD&lt;/a&gt; comic strip:&lt;/p&gt;
 
 &lt;!-- more --&gt;
+
+&lt;pre&gt;&lt;code&gt;int a=1;
+for (int i=0;i&amp;lt;4 ; i++)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;int a=1;
+for (int i=0;i&amp;lt;4 ; i++)
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/python&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# This script gets the latest xkcd comic strip &lt;/span&gt;

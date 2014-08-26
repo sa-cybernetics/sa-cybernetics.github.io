@@ -5,8 +5,8 @@
         <description>SA Cybernetics - Simen Andresen</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2014-08-26T21:19:31+02:00</lastBuildDate>
-        <pubDate>2014-08-26T21:19:31+02:00</pubDate>
+        <lastBuildDate>2014-08-26T21:54:38+02:00</lastBuildDate>
+        <pubDate>2014-08-26T21:54:38+02:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -15,6 +15,14 @@
                 <description>&lt;p&gt;This semester I’m writing my master’s project, which seems to be a time when procrastination thrives. When setting up Ubuntu on my school PC i had to decide what to use for desktop image. I therefore wrote a script to update the desktop background to the most recent &lt;a href=&quot;http://www.xkcd.com&quot;&gt;XKCD&lt;/a&gt; comic strip:&lt;/p&gt;
 
 &lt;!-- more --&gt;
+
+&lt;pre&gt;&lt;code&gt;int a=1;
+for (int i=0;i&amp;lt;4 ; i++)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;int a=1;
+for (int i=0;i&amp;lt;4 ; i++)
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/python&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# This script gets the latest xkcd comic strip &lt;/span&gt;
