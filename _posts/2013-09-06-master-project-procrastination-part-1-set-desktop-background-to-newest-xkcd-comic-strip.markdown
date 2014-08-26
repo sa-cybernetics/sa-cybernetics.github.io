@@ -113,3 +113,7 @@ The script fetches the image of the comic and the mouseover text. The mouseover 
 If your're using a Unix based OS you can schedule the script to run e.g. every  Monday, Wednesday and Friday using [crontab](http://www.adminschoice.com/crontab-quick-reference/). 
 
 The source can be found in my [github](https://github.com/simena86/xkcdDesktop)
+
+
+![Alt text](/images/xkcd.png)
+

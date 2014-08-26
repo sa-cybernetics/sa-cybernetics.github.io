@@ -4,7 +4,7 @@
  <title>SA Cybernetics</title>
  <link href="http://username.github.io/" rel="self"/>
  <link href="http://username.github.io"/>
- <updated>2014-08-26T21:13:19+02:00</updated>
+ <updated>2014-08-26T21:19:31+02:00</updated>
  <id>http://username.github.io</id>
  <author>
    <name>Simen Andresen</name>
@@ -116,6 +116,9 @@
 If your’re using a Unix based OS you can schedule the script to run e.g. every  Monday, Wednesday and Friday using &lt;a href=&quot;http://www.adminschoice.com/crontab-quick-reference/&quot;&gt;crontab&lt;/a&gt;. &lt;/p&gt;
 
 &lt;p&gt;The source can be found in my &lt;a href=&quot;https://github.com/simena86/xkcdDesktop&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/xkcd.png&quot; alt=&quot;Alt text&quot; /&gt;&lt;/p&gt;
+
 </content>
  </entry>
  
