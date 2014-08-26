@@ -5,8 +5,8 @@
         <description>SA Cybernetics - Simen Andresen</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2014-08-26T21:54:38+02:00</lastBuildDate>
-        <pubDate>2014-08-26T21:54:38+02:00</pubDate>
+        <lastBuildDate>2014-08-26T21:57:06+02:00</lastBuildDate>
+        <pubDate>2014-08-26T21:57:06+02:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -15,14 +15,6 @@
                 <description>&lt;p&gt;This semester I’m writing my master’s project, which seems to be a time when procrastination thrives. When setting up Ubuntu on my school PC i had to decide what to use for desktop image. I therefore wrote a script to update the desktop background to the most recent &lt;a href=&quot;http://www.xkcd.com&quot;&gt;XKCD&lt;/a&gt; comic strip:&lt;/p&gt;
 
 &lt;!-- more --&gt;
-
-&lt;pre&gt;&lt;code&gt;int a=1;
-for (int i=0;i&amp;lt;4 ; i++)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;int a=1;
-for (int i=0;i&amp;lt;4 ; i++)
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/python&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# This script gets the latest xkcd comic strip &lt;/span&gt;
@@ -126,6 +118,63 @@ If your’re using a Unix based OS you can schedule the script to run e.g. every
                 <link>http://username.github.io/linux/2013/09/06/master-project-procrastination-part-1-set-desktop-background-to-newest-xkcd-comic-strip</link>
                 <guid>http://username.github.io/linux/2013/09/06/master-project-procrastination-part-1-set-desktop-background-to-newest-xkcd-comic-strip</guid>
                 <pubDate>2013-09-06T13:48:00+02:00</pubDate>
+        </item>
+
+        <item>
+                <title>Hand Tracking And Recognition with OpenCV</title>
+                <description>&lt;p&gt;Computer Vision is in many ways the ultimate sensor, and has endless potential applications to robotics. Me and 2 classmates (Vegar Østhus and Martin Stokkeland ) did a project in Computer Vision at UCSB and wrote a program to recognize and track finger movements.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;Below is a flowchart representation of the program&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/handRecognition/gesture_flowchart.png&quot; width=&quot;400&quot; title=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The hand tracking is based on color recognition. The program is therefore initialized by sampling color from the hand:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/handRecognition/waitforpalm.png&quot; width=&quot;600&quot; title=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The hand is then extracted from the background by using a threshold using the sampled color profile.
+Each color in the profile produces a binary image which in turn are all summed together. A nonlinear median filter is then applied to get a smooth and noise free binary representation of the hand. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/handRecognition/binary.png&quot; width=&quot;600&quot; title=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When the binary representation is generated the hand is processed in the following way:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/handRecognition/contour.png&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The properties determining whether  a convexity defect is to be dismissed is the angle between the lines going 	from the defect to the neighbouring convex polygon vertices&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/handRecognition/handangle.png&quot; width=&quot;300&quot; title=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The defect is dismissed if:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+
+\begin{aligned}
+length &lt; 0.4l_{bb} \\
+angle &gt; 80^o
+\end{aligned}
+ %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;The analyzis results in data that can be of further use in gesture recognition:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fingertip positions &lt;/li&gt;
+  &lt;li&gt;Number of fingers &lt;/li&gt;
+  &lt;li&gt;Number of hands  &lt;/li&gt;
+  &lt;li&gt;Area of hands &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The source code can be found &lt;a href=&quot;https://github.com/simena86/handDetectionCV&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/handRecognition/final_result.png&quot; width=&quot;600&quot; title=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/o3LSOq6OC4I?color=white&amp;amp;theme=light&quot;&gt;&lt;/iframe&gt;
+</description>
+                <link>http://username.github.io/c++/opencv/computer%20vision/2013/08/12/hand-tracking-and-recognition-with-opencv</link>
+                <guid>http://username.github.io/c++/opencv/computer%20vision/2013/08/12/hand-tracking-and-recognition-with-opencv</guid>
+                <pubDate>2013-08-12T21:52:00+02:00</pubDate>
         </item>
 
 

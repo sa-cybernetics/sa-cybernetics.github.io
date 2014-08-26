@@ -10,16 +10,6 @@ This semester I'm writing my master's project, which seems to be a time when pro
 
 <!-- more -->
 
-~~~~~
-int a=1;
-for (int i=0;i<4 ; i++)
-~~~~~
-
-    int a=1;
-    for (int i=0;i<4 ; i++)
-
-
-
 {%highlight python %}
 
 #!/usr/bin/python

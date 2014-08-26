@@ -12,3 +12,4 @@ http://username.github.io/tags.html
 http://username.github.io/pages/wolfram.html
 
 http://username.github.io/linux/2013/09/06/master-project-procrastination-part-1-set-desktop-background-to-newest-xkcd-comic-strip
+http://username.github.io/c++/opencv/computer%20vision/2013/08/12/hand-tracking-and-recognition-with-opencv
