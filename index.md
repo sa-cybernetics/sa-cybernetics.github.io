@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Blog Posts
-tagline: Supporting tagline
+tagline: 
 ---
 {% include JB/setup %}
 
