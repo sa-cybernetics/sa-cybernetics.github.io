@@ -62,4 +62,3 @@ The source code can be found [here](https://github.com/simena86/handDetectionCV 
 {% img /images/handRecognition/final_result.png 600  %}
 
 
-{% youtube  o3LSOq6OC4I %}
