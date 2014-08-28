@@ -1,8 +1,16 @@
----
-# Remember to set production_url in your _config.yml file!
-title : Sitemap
----
-{% for page in site.pages %}
-{{site.production_url}}{{ page.url }}{% endfor %}
-{% for post in site.posts %}
-{{site.production_url}}{{ post.url }}{% endfor %}
+
+http://username.github.io/pages/Surf_and_Kite_Forcast.html
+http://username.github.io/about.html
+http://username.github.io/archive.html
+http://username.github.io/atom.xml
+http://username.github.io/categories.html
+http://username.github.io/index.html
+http://username.github.io/pages.html
+http://username.github.io/rss.xml
+http://username.github.io/sitemap.txt
+http://username.github.io/tags.html
+http://username.github.io/pages/wolfram.html
+
+http://username.github.io/slett/2014/08/26/slett
+http://username.github.io/linux/2013/09/06/master-project-procrastination-part-1-set-desktop-background-to-newest-xkcd-comic-strip
+http://username.github.io/c++/opencv/computer%20vision/2013/08/12/hand-tracking-and-recognition-with-opencv
