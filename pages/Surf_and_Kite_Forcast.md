@@ -1,9 +1,31 @@
 ---
 layout: page
+css: surf_scroll_style
 title: "Surf and Kite Forecast"
 description: ""
 ---
 {% include JB/setup %}
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    var s = $("#sticker");
+    var pos = s.position();                    
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        if (windowpos - 160 >= pos.top) {
+            s.addClass("stick");
+        	s.html("<img src='/images/surf_kite_forcast/windarrows.png'>" );
+        } else {
+            s.removeClass("stick"); 
+        	s.html("" );
+        }
+    });
+});
+
+</script>
+<link rel="stylesheet" href="my_styles.css">
+<div id='sticker'>  </div>
 
 ##Spots:
 
