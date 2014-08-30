@@ -10,7 +10,7 @@ This semester I'm writing my master's project, which seems to be a time when pro
 
 <!-- more -->
 
-{%highlight python %}
+{%highlight python linenos %}
 
 #!/usr/bin/python
 # This script gets the latest xkcd comic strip 
