@@ -24,7 +24,7 @@ desc "Generate and publish blog to gh-pages"
 task :publish => [:generate] do
   Dir.mktmpdir do |tmp|
 	system "mv _site/* #{tmp}"
-	system "git add . "
+	system "git add --all . "
 	system "git commit -am #{"asdf"}"
 	system "git checkout -B master"
 	system "rm -rf *"

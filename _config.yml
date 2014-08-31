@@ -81,7 +81,7 @@ JB :
   comments :
     provider : disqus
     disqus :  
-      short_name : sa-cybernetics
+      short_name : simenandresen
     livefyre :
       site_id : 123
     intensedebate :
