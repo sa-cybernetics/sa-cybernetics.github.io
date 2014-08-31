@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Logging Accelerometer from Android to PC"
-date: 2013-04-30 22:09
+date: 2012-04-30 22:09
 comments: true
 categories: 
 ---
