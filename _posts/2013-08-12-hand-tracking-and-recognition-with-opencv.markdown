@@ -3,7 +3,7 @@ layout: post
 title: "Hand Tracking And Recognition with OpenCV"
 date: 2013-08-12 21:52
 comments: true
-categories: [ C++, OpenCV, Computer Vision ] 
+categories: [ C++, OpenCV, Computer-Vision ] 
 ---
 
 Computer Vision is in many ways the ultimate sensor, and has endless potential applications to robotics. Me and 2 classmates (Vegar Østhus and Martin Stokkeland ) did a project in Computer Vision at UCSB and wrote a program to recognize and track finger movements.
