@@ -1,0 +1,13 @@
+div#sticker {
+    margin:30px 0;
+    width:190px;
+	height:0px;
+	right:0px;
+}
+.stick {
+    position:fixed;
+	height:100px;
+    top:10px;
+	right:0px;
+}
+
