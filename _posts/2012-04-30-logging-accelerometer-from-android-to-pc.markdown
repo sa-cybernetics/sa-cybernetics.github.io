@@ -10,13 +10,13 @@ categories:
 
 I am pretty new to Android and decided to play around with the sensors. I always find accelerometers fun to play with, and like to visualize the sensor reading through a real time plot. In the java-script for the android app below, the acceleration in the x axis is read and streamed through a TCP socket to the PC over wlan. A simple python server script reads the data from a socket and writes it to a perl script, logging the data in GnuPlot, and thus setting my personal record for mixing different languages.
 
-<!-- more-->
+<!-- more -->
 
 {% img  http://sacybernetics.files.wordpress.com/2012/06/2012-06-03-23-07-43.png 300 180 %}
 
 {% youtube OOufu8sdyKA %}
 
-``` java accel2wifi.java
+{% highlight java %}
 
 package noe.rart;
  
@@ -161,19 +161,19 @@ public class Socket_test2Activity extends Activity {
         }
     }
 }
-```
+{% endhighlight  %}
 
 The simple python server script below opens a TCP socket and receives the readings from the Android app over WLAN. Note that the python script reads the last entry in the receive buffer, which then makes up a LIFO que, and no timestamp is added to the reading. For a signal analysis one would add a time stamp and a FIFO que should be used instead. For debugging and pure fun, the method I used is still pretty sufficient.
 `
 The plotting is excecuted with piping the output from the python script to the perl script in the linux terminal:
 
-``` bash
+{% highlight bash  %}
 $ ./server.py | ./driveGnuPlot.pl 1 500 "Accelerometer Reading"
-```
+{% endhighlight  %}
 
 Python server :
 
-``` python server.py
+{% highlight python  %}
 #!/usr/bin/python
 import socket
 from time import *
@@ -215,13 +215,13 @@ except KeyboardInterrupt:
 except IndexError:
 	conn.close()
 	print "indexError"
-```
+{% endhighlight  %}
 
 
 And lastly the python script pipes data to a Perl script written by Thanassis Tsiodras.
 
 
-``` perl
+{% highlight perl  %}
 
 #!/usr/bin/perl -w
 use strict;
@@ -363,6 +363,6 @@ sub main {
 main;
 sleep(3);
 
-```
+{% endhighlight  %}
 
 

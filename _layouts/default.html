@@ -6,3 +6,7 @@ theme :
 {% include themes/twitter/default.html %}
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+{% if post && post.css %}
+  <link rel='stylesheet' type='text/css' href='{{ post.css }}.css' />
+{% endif %}

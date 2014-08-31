@@ -50,22 +50,6 @@ This spot is a short drive away from Kristiansand.
      
         
 
-<style>
-table,th,td
-{
-border:0px solid black;
-vertical-align: middle;
-}
-</style>
-
-<table style="width:300px">
-<tr style="height:100px">
-  <td valign="center">Wind Directions:</td>
-  <td valign="center"> 
-		<img  src="/images/surf_kite_forcast/hamresanden.png" width="100" >
-  </td>		
-</tr>
-</table>
 
 
 <script src="http://www.yr.no/place/Norway/Vest-Agder/Kristiansand/Hamresanden/external_box_three_days.js"></script><noscript><a href="http://www.yr.no/place/Norway/Vest-Agder/Kristiansand/Hamresanden/">yr.no: Forecast for Hamresanden</a></noscript>
