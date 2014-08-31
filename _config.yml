@@ -7,7 +7,7 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Simen Andresen
+title : '{SA}'
 tagline: Cybernetics, Linux, Programming
 author :
   name : Simen Andresen
