@@ -13,11 +13,11 @@ tagline:
 
 	a:link.mylink{
 		color:	#002E5C;
-		font-weight:700;
+		font-weight:600;
 	}
 	a:visited.mylink{
 		color:	#002E5C;
-		font-weight:700;
+		font-weight:600;
 	}
 	.alignright { 
 		text-align: right;
