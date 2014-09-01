@@ -1,4 +1,5 @@
 ---
+inpage: true
 layout: page
 css: surf_scroll_style
 title: "Surf and Kite Forecast"

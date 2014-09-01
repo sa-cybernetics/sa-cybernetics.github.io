@@ -1,4 +1,5 @@
 ---
+inpage: true
 layout: page
 title: "Wolfram"
 description: ""
