@@ -13,7 +13,7 @@ $(document).ready(function() {
     var pos = s.position();                    
     $(window).scroll(function() {
         var windowpos = $(window).scrollTop();
-        if (windowpos - 160 >= pos.top) {
+        if (windowpos - 210 >= pos.top) {
             s.addClass("stick");
         	s.html("<img src='/images/surf_kite_forcast/windarrows.png'>" );
         } else {
