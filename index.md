@@ -10,6 +10,15 @@ tagline:
 	table{
 		border:0px solid black;
 	}
+
+	a:link.mylink{
+		color:	#002E5C;
+		font-weight:700;
+	}
+	a:visited.mylink{
+		color:	#002E5C;
+		font-weight:700;
+	}
 	.alignright { 
 		text-align: right;
 	    width: 23%;	
@@ -28,7 +37,7 @@ tagline:
   {% for post in site.posts %} 
   <tr>
   	<td class="alignright" >
-	<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}   </a>  
+	<a class="mylink" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}   </a>  
 	<br>
     {{ post.date | date_to_string }} 
 	</td>
