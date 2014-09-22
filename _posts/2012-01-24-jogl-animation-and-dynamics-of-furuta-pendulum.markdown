@@ -45,45 +45,7 @@ $$
 
 And one can easily solve the dynamics by numerical integration. I have solved the system using Explicit Runge Kutta 4 which yields a discrete solution that can easily be used in a OpenGl 3d animation. The main idea for capturing the dynamics in the animation is to, in  each call to the display() function (each new frame of the animation), calculate the next iterate of the numerical integrator (RK4 in this case). This can be seen in the code below, where $$ f_1=\ddot{\theta}_1 $$ and f2, f3,f4 (not shown in the code) each calculates their derrivatives which is used in one multiple input, multiple output function f. Lastly this is used in solve_dyn() to calculate an iterate from the RK4 method.
 
-{% highlight java %}
-public double f1(Matrix x, double u ){
-	double x1,x2,x4;
-	double tau;
-	x1=x.get(0,0); x2=x.get(0,1); x4=x.get(0,3);
-	double sign;
-	if (x1<0){sign=1;}else{sign=-1;}
-	u=u+sign*5.0;
-	tau=u;
-
-	double f_num=(arm1*arm2*m*Math.pow(x1,2)*Math.pow((Math.cos(x4)),2)+(arm1*g*m-
-              2*Math.pow(arm2,2)*m*x1*x2)
-	 	*(Math.cos(x4))-arm1*arm2*m*Math.pow(x2,2))*(Math.sin(x4))+tau;
-	double f_denum=Math.pow(arm2,2)*m*Math.pow((Math.sin(x4)),2)-Math.pow(arm1,2)*m*Math.pow((Math.cos(x4)),2)+                  Math.pow(arm1,2)*m+J1;
-	if(f_denum==0){
-		System.out.println("divide by zero");
-	        return 1.0f;
-	}else
-	        return f_num/f_denum;
-	}
-
-public Matrix f(Matrix x, double u){
-       Matrix retVal = new Matrix(new double[]{f1(x, u) ,f2(x, u),f3(x, u),f4(x, u)},1);
-       return retVal;
- }
-
-public double [] solve_dyn(){
-       k1= f(x,tau).times(h);
-       k2= f( x.plus(k1.times(0.5)),tau).times(h);
-       k3= f(x.plus(k2.times(0.5)),tau).times(h);
-       k4= f( x.plus(k3),tau).times(h);
-       x_next= x.plus(k1.times((1.0/6.0))).plus(k2.times((1.0/3.0))).
-               plus(k3.times(1.0/3.0)).plus(k4.times(1.0/6.0));
-       x=x_next;
-       return new double [] {x.get(0,2)*rad2deg, x.get(0,3)*rad2deg};
- }
-
-
-{% endhighlight%}
+<script src="https://gist.github.com/simena86/1cae25be89a82e4a650d.js"></script>
 
 The animation:
 

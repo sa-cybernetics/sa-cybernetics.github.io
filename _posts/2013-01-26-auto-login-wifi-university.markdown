@@ -11,58 +11,12 @@ When using the University WiFi I found it annoying that I always had to login th
 I am using Wicd Network Manager, which has a nice feature where one can include scripts that you want to run when the computer connects and disconnects to a network ( see wicd documentation). Using this feature I made a short script to run different tasks when the computer discovered different Wifi's. I have a file called perform_on_post_connect.sh in the directory /etc/wicd/scripts/postconnect on my linux machine with the following code:
 
 
-{% highlight bash%}
 
-#!/bin/bash
+<script src="https://gist.github.com/simena86/c7341285d34637b9212b.js"></script>
 
-essid=$2
-connection_type=$1
+I then wrote a python script called foo_autologin.py that performs the nessecary login procedure. If I am not mistaken, with Wicd one has to have this in a directory with only root access. The source for foo_autologin.py:
 
-if 	[ "${essid}" == "Foo network" ]; then
-	# do something when logging into 'Foo network'
-	./myscripts/foo_autologin.py
-elif [ "${essid}" == "Bar network" ]; then
-	# do something else when connecting to 'Bar network'
-fi
-
-{%endhighlight%}
-
-I then use a python script called foo_autologin.py that performs the nessecary login procedure. If I am not mistaken, with Wicd one has to have this in a directory with only root access. The source for foo_autologin.py:
-
-{%highlight python %}
-
-#!/usr/bin/python
-import requests
-import sys
-
-#
-# AUTO LOGIN TO Foo NETWORK
-#
-
-print "This is an automatic login to Foo network"
-URL='<login url>' 
-EMAIL = '<your email>'
-PASSWORD = '<your password>'
-
-def main():
-   # Start a session so we can have persistant cookies
-   session = requests.session(config={'verbose': sys.stderr})
-   # use headers that is posted in the HTML POSt method
-   headers={'Connection':'keep-alive'}
-   # use data originally in your html-login
-   login_data = {
-        'username': EMAIL,
-        'password': PASSWORD,
-        'buttonClicked':'4',
-		'err_flag':'0',		
-    }
-    r = session.post(URL, data=login_data, headers=headers, timeout=10.00)
-
-if __name__ == '__main__':
-    main()
-
-{%endhighlight%}
-
+<script src="https://gist.github.com/simena86/3007e02416461d849330.js"></script>
 
 When using the code above one has to use the headers and data used in the post method. The way I got the data from a login to the university was through using a Firefox Extension called Live HTTP Headers, as I found that chrome would not show HTTP traffic for HTTPS sites.
 
