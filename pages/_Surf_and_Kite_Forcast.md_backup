@@ -1,0 +1,170 @@
+---
+inpage: true
+layout: page
+css: surf_scroll_style
+title: "Surf and Kite Forecast"
+description: ""
+---
+{% include JB/setup %}
+
+<style>
+	table{
+		border:0px solid black;
+	}
+
+	.left { 
+		text-align: left;
+	    width: 13%;	
+		font-family: "Andale Mono", AndaleMono, monospace;
+		color: #009933
+
+	}
+	.right { 
+		text-align: left;
+		font-family: "Andale Mono", AndaleMono, monospace;
+		color: #009933
+	}
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    var s = $("#sticker");
+    var pos = s.position();                    
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        if (windowpos - 210 >= pos.top) {
+            s.addClass("stick");
+        	s.html("<img src='/images/surf_kite_forcast/windarrows.png'>" );
+        } else {
+            s.removeClass("stick"); 
+        	s.html("" );
+        }
+    });
+});
+
+jQuery(function(){
+         jQuery('#showall').click(function(){
+               jQuery('.targetDiv').show();
+        });
+        jQuery('.showSingle').click(function(){
+              jQuery('.targetDiv').hide();
+              jQuery('#div'+$(this).attr('target')).show();
+        });
+});
+
+
+</script>
+
+<style>
+#wrapper { width: 468*0.8px; height: 290*0.8px; padding: 0; overflow: hidden; }
+#scaled-frame { width: 468px; height: 290px; border: 0px; }
+#scaled-frame {
+    zoom: 0.8;
+    -moz-transform: scale(0.8);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.8);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.8);
+    -webkit-transform-origin: 0 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #scaled-frame  { zoom: 1;  }
+}
+</style>
+
+
+<style>
+#wrapper { width: 850*0.87px; height: 430*0.87px; padding: 0; overflow: hidden; }
+#scaled-frame2 { width: 850px; height: 430px; border: 0px; }
+#scaled-frame2 {
+    zoom: 0.8;
+    -moz-transform: scale(0.87);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.87);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.87);
+    -webkit-transform-origin: 0 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #scaled-frame2  { zoom: 1;  }
+}
+</style>
+
+<link rel="stylesheet" href="my_styles.css">
+<div id='sticker'>  </div>
+
+<div id="menu" style="height:1200px;width:120px;float:left;">
+	<b> Spots </b>
+	<br>
+	<a  class="showSingle" target="1">Hamresanden</a>
+	<br>
+	<a  class="showSingle" target="2">Høllen</a>
+</div>
+
+<div id="content" style="height:1000px;width:400px;float:left;">
+	<div id="div1" class="targetDiv" style="display:none">
+		<iframe id="scaled-frame" src="http://www.yr.no/place/Norway/Vest-Agder/Kristiansand/Hamresanden/external_box_three_days.html" 
+		width="468" height="290" frameborder="0" style="margin: 10px 0 10px 0" scrolling="no"></iframe>
+		<iframe id="scaled-frame2" src="http://www.yr.no/place/Norway/Vest-Agder/Kristiansand/Hamresanden/external_box_hour_by_hour.html" 
+		width="850" height="430" frameborder="0" style="margin: 10px 0 10px 0" scrolling="no"></iframe>
+
+	</div>
+
+	<div id="div2" style="display:none">
+		<iframe id="scaled-frame" src="http://www.yr.no/place/Norway/Vest-Agder/S%c3%b8gne/H%c3%b8llen/external_box_three_days.html" 
+		width="468" height="290" frameborder="0" style="margin: 10px 0 10px 0" scrolling="no"></iframe>
+		<iframe id="scaled-frame2" src="http://www.yr.no/place/Norway/Vest-Agder/S%c3%b8gne/H%c3%b8llen/external_box_hour_by_hour.html"
+		width="850" height="430" frameborder="0" style="margin: 10px 0 10px 0" scrolling="no"></iframe>
+
+
+
+	</div>
+</div>
+
+
+<br>
+
+
+
+---
+
+
+<div class="hamre" style="display:none">
+### <a name="hamresanden"> Hamresanden </a>
+This spot is a short drive away from Kristiansand.
+
+<script src="http://www.yr.no/place/Norway/Vest-Agder/Kristiansand/Hamresanden/external_box_three_days.js"></script><noscript><a href="http://www.yr.no/place/Norway/Vest-Agder/Kristiansand/Hamresanden/">yr.no: Forecast for Hamresanden</a></noscript>
+<script src="http://www.yr.no/place/Norway/Vest-Agder/Kristiansand/Hamresanden/external_box_hour_by_hour.js"></script><noscript><a href="http://www.yr.no/place/Norway/Vest-Agder/Kristiansand/Hamresanden/">yr.no: Forecast for Hamresanden</a></noscript>
+
+</div>
+
+---
+
+<div class="hllen" style="display:none">
+###<a name="hllen">Høllen, Søgne </a>
+
+<script src="http://www.yr.no/place/Norway/Vest-Agder/Søgne/Høllen/external_box_three_days.js"></script><noscript><a href="http://www.yr.no/place/Norway/Vest-Agder/Søgne/Høllen/">yr.no: Forecast for Høllen</a></noscript>
+<script src="http://www.yr.no/place/Norway/Vest-Agder/Søgne/Høllen/external_box_hour_by_hour.js"></script><noscript><a href="http://www.yr.no/place/Norway/Vest-Agder/Søgne/Høllen/">yr.no: Forecast for Høllen</a></noscript>
+</div>
+---
+
+
+<div class="Sjøsanden" style="display:none">
+###<a name="sjsanden">Sjøsanden, Mandal </a>
+
+<script src="http://www.yr.no/place/Norway/Vest-Agder/Mandal/Sjøsanden/external_box_three_days.js"></script><noscript><a href="http://www.yr.no/place/Norway/Vest-Agder/Mandal/Sjøsanden/">yr.no: Forecast for Sjøsanden</a></noscript>
+<script src="http://www.yr.no/place/Norway/Vest-Agder/Mandal/Sjøsanden/external_box_hour_by_hour.js"></script><noscript><a href="http://www.yr.no/place/Norway/Vest-Agder/Mandal/Sjøsanden/">yr.no: Forecast for Sjøsanden</a></noscript>
+</div>
+---
+
+
+<div class="havika" style="display:none">
+###<a name="havika">Havika, Farsund</a>
+<script src="http://www.yr.no/place/Norway/Vest-Agder/Farsund/Havika/external_box_three_days.js"></script><noscript><a href="http://www.yr.no/place/Norway/Vest-Agder/Farsund/Havika/">yr.no: Forecast for Havika</a></noscript>
+<script src="http://www.yr.no/place/Norway/Vest-Agder/Farsund/Havika/external_box_hour_by_hour.js"></script><noscript><a href="http://www.yr.no/place/Norway/Vest-Agder/Farsund/Havika/">yr.no: Forecast for Havika</a></noscript>
+</div>
+
+---
