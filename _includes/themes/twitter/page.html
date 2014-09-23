@@ -1,5 +1,13 @@
-<div class="page-header">
+<div class="page-header"  >
+	{% if page.description == 'Kite' %}
+	<div style="background-image: url('/images/surf_kite_forcast/kite.png');height:230px;" >
 
+	</div>
+	{% else %}
+	<div style="background-image: url('/images/surf_kite_forcast/');height:30px;" >
+
+	</div>
+	{% endif %}
 </div>
 
 <div class="row">

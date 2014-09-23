@@ -3,9 +3,13 @@ inpage: true
 layout: page
 css: surf_scroll_style
 title: "Surf and Kite Forecast"
-description: ""
+description: "Kite"
+mytag: "Kite"
 ---
 {% include JB/setup %}
+
+
+<link href="{{ ASSET_PATH }}/sa_cybernetics/styles.css" rel="stylesheet" type="text/css">
 
 <style>
 	table{
@@ -61,7 +65,7 @@ jQuery(function(){
 <link rel="stylesheet" href="my_styles.css">
 <div id='sticker'>  </div>
 
-<div id="menu" style="height:1200px;width:120px;float:left;font-weight:800;font-size:110%;">
+<div id="menu" style="width:120px;float:left;font-weight:800;font-size:110%;">
 	<b> Spots </b>
 	<br>	
 	<a  class="showSingle" target="1">Hamresanden</a>
@@ -71,7 +75,11 @@ jQuery(function(){
 	<a  class="showSingle" target="3">Kviljo</a>
 </div>
 
-<div id="content" style="height:1200px;width:400px;float:left;">
+<div id="content" style="width:400px;float:left;">
+
+	<h3 >
+		Wind Forecast	
+	</h3 >
 	<div id="div1" class="targetDiv" >
 		<img src="http://www.yr.no/sted/Norge/Vest-Agder/Kristiansand/Hamresanden~2229/meteogram.png" width="700" height="200">
 		<iframe id="scaled-frame" src="http://www.yr.no/place/Norway/Vest-Agder/Kristiansand/Hamresanden/external_box_three_days.html" 
@@ -86,6 +94,10 @@ jQuery(function(){
 		<img src="http://www.yr.no/sted/Norge/Vest-Agder/Farsund/Kviljosanden/meteogram.png" width="700" height="200">
 		<iframe id="scaled-frame" src="http://www.yr.no/place/Norway/Vest-Agder/Farsund/Kviljobukta~2219861/external_box_three_days.html"
 		width="468" height="290" frameborder="0" style="margin: 10px 0 10px 0" scrolling="no"></iframe>
+		<h3 >
+			Surf Forecast	
+		</h3 >
+		<iframe src="http://magicseaweed.com/Lista-Surf-Report/653/Embed/" width="700" height="600" frameborder="0"></iframe>
 	</div>
 
 
