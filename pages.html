@@ -6,14 +6,12 @@ group: navigation
 ---
 {% include JB/setup %}
 
-<ul>
-
-
+<ul style="list-style-type:none">
   {% for page in site.pages %} 
 	{% if page.inpage %}
-    <li class="active"><a href="{{ BASE_PATH }}{{page.url}}" class="active">{{page.title}}</a></li>
+    <li ><a href="{{ BASE_PATH }}{{page.url}}" style="font-weight:800;font-size:110%;">{{page.title}}</a></li>
 	<br>
 	{% endif %}
   {% endfor %}
-
 </ul>
+

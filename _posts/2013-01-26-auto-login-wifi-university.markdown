@@ -7,7 +7,9 @@ categories:
 ---
 
 When using the University WiFi I found it annoying that I always had to login through a browser using my university username and password. Using the simple scripts below, this bothersome procedure can be done automatically each time the computer discovers a network.
+
 <!-- more -->
+
 I am using Wicd Network Manager, which has a nice feature where one can include scripts that you want to run when the computer connects and disconnects to a network ( see wicd documentation). Using this feature I made a short script to run different tasks when the computer discovered different Wifi's. I have a file called perform_on_post_connect.sh in the directory /etc/wicd/scripts/postconnect on my linux machine with the following code:
 
 

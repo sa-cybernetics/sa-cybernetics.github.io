@@ -1,21 +1,17 @@
 ---
 layout: page
-title: Blog Posts
+title: Home
 tagline: 
 ---
 {% include JB/setup %}
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
+<link href="{{ ASSET_PATH }}/sa_cybernetics/styles.css" rel="stylesheet" type="text/css">
+
 
 <style>
-	table{
-		border:0px solid black;
-	}
 
-	tr{
-		border:0px solid black;
-	}
 
 	a:link.mylink{
 		font-weight:600;
@@ -44,19 +40,24 @@ tagline:
 	}
 </style>
 
-<table style="width:100%">
+<div id="home_posts">
   {% for post in site.posts %} 
-  <tr> 
-  	<td class="alignright">
-	<a class="mylink" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>  
+  <div class="shaddow">
+  <table>
+	  <tr> 
+		<td class="alignright">
+			<a class="mylink" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>  
+			<br>
+			{{ post.date | date_to_string }} 
+		</td>
+		<td class="alignleft">
+			{{ post.content | more: "excerpt" }} 
+		</td>
+	  </tr>
+  </table>
+  </div>
 	<br>
-    {{ post.date | date_to_string }} 
-	</td>
-	<td class="alignleft">
-	{{ post.content | more: "excerpt" }} 
-	</td>
-  </tr>
   {% endfor %}
-</table>
+</div>
 
 
