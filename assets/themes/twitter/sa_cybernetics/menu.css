@@ -72,7 +72,7 @@
 }
 #cssmenu > ul > li > a {
   padding: 20px;
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
@@ -144,7 +144,7 @@
 #cssmenu ul ul li a {
   padding: 10px 20px;
   width: 160px;
-  font-size: 12px;
+  font-size: 14px;
   background: #333333;
   text-decoration: none;
   color: #dddddd;
@@ -259,7 +259,7 @@
     padding: 20px;
     color: #000000;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
   }
   #cssmenu #menu-button::after {

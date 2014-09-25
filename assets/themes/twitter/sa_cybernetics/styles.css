@@ -31,3 +31,13 @@
 	box-shadow: 3px 3px 1px #999999;
 	background-color: #fff;
 }
+
+
+.surf_n_kite {
+	background-image: url('/images/surf_kite_forcast/kite.png');
+    position: relative;
+    background-position: top center;
+	height:230px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
