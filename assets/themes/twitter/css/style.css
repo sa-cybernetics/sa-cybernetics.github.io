@@ -28,13 +28,22 @@ body {
 .page-header {
   /* background-color: #f5f5f5;*/
   padding: 0px 0px 0px;
-  padding: 0px 0px 0px;
   margin: -20px -20px 20px;
   background-color: #eee;
 }
 
+.page-header h1 {
+	padding: 10px 0px 10px;
+
+}
+
 .topbar .btn {
   border: 0;
+}
+
+.topbar{
+	box-shadow: 2px 2px 1px #AAAAAA;
+
 }
 
 
