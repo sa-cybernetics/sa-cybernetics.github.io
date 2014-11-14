@@ -1,3 +1,0 @@
-
-css:
-/assets/themes/twitter/css/1.4.0/bootstrap.css
